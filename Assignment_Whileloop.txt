@@ -1,0 +1,49 @@
+
+solve below questions using while loop
+1)Print every alternate uppercase letter
+package day3;
+
+public class Program15_PrintASCII {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+		char ch='A';
+		while(ch<='Z')
+		{
+			System.out.println(ch);
+			ch+=2;
+			
+		}
+	}
+
+}
+
+Output:
+A C E G I ... Y
+
+
+
+2)Print ASCII values of A to Z
+package day3;
+
+public class Program15_PrintASCII {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+		char ch='A';
+		while(ch<='Z')
+		{
+			System.out.println(ch+" = "+(int)(ch));
+			ch++;
+		}
+	}
+
+}
+
+Output:
+A = 65
+B = 66
+...
+Z = 90
