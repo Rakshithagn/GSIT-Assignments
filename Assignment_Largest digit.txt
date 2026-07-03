@@ -1,0 +1,30 @@
+Find Largest Digit
+
+Write a Java program to find the largest digit in a given number.
+
+package day3;
+
+public class Program16_Largestdigit {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int num=59371;
+		int large=0;
+		while(num>0)
+		{
+			int digit=num%10;
+			if(digit>large)
+			{
+				large=digit;
+			}
+			num=num/10;
+		}
+		System.out.println("Largest digit is : "+large);
+
+	}
+
+}
+
+Example:
+Input: 59371
+Output: 9
