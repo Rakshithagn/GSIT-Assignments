@@ -1,0 +1,157 @@
+Question 1: Remove Duplicate Prints
+
+Problem Statement
+
+Print only the unique elements from an array.
+
+Do not use another array or any collection.
+
+Sample Input
+
+int arr[] = {5, 3, 8, 5, 2, 3, 9, 8};
+
+
+package day5;
+
+public class Program7_Removeduplicate {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int arr[] = {5, 3, 8, 5, 2, 3, 9, 8};
+		for(int i=0;i<=arr.length-1;i++) {
+			
+		
+			boolean isduplicate=false;
+            for(int j=0;j<i;j++) 
+            {
+            	if(arr[i]==arr[j])
+            	{
+            		isduplicate=true;
+            		break;
+            	}
+            }
+            if(isduplicate!=true)
+            {
+            System.out.println(arr[i]);
+		}
+	}
+	}
+}
+Expected Output
+
+5 3 8 2 9
+
+
+
+Question 2: Find Common Elements
+
+Problem Statement
+
+Given two integer arrays of the same size, print all common elements.
+
+Avoid printing duplicate common elements.
+
+Sample Input
+
+int arr1[] = {2, 5, 7, 9, 11, 5}; int arr2[] = {1, 5, 7, 15, 20, 5};
+
+package day5;
+
+public class Program8_commonelements {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int arr1[] = {2, 5, 7, 9, 11, 5}; 
+		int arr2[] = {1, 5, 7, 15, 20, 5};
+		
+		for(int i=0;i<=arr1.length-1;i++) 
+		{
+			boolean alreadyprinted=false;
+            for(int k=0;k<i;k++) 
+            {
+            	if(arr1[i]==arr1[k])
+            	{
+            		alreadyprinted=true;
+            		break;
+            	}
+            }
+            if(alreadyprinted==true)
+            {
+            continue;
+            }
+          for(int j=0;j<=arr2.length-1;j++)
+          {
+        	  if(arr1[i]==arr2[j])
+        	  {
+        		  System.out.println(arr1[i]);
+        		  break;
+        	  }
+          }
+	}
+	}
+}
+
+Expected Output
+
+5 7
+
+
+Question 3: Frequency of Each Element
+
+Problem Statement
+
+Print the frequency of every unique element in the array.
+
+Do not print the frequency of the same element more than once.
+
+Sample Input
+
+int arr[] = {4, 2, 4, 6, 2, 2, 7};
+
+
+package day5;
+
+public class Program9_frequency {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int arr[] = {4, 2, 4, 6, 2, 2, 7};
+		
+		for(int i=0;i<=arr.length-1;i++) 
+		{
+			
+		boolean alreadycounted=false;
+		 for(int j=0;j<i;j++) 
+            {
+            	if(arr[i]==arr[j])
+            	{
+            	 alreadycounted=true;
+            		break;
+            	}
+            }
+		 if(alreadycounted==true)
+		 {
+			 continue;
+		 }
+		 
+		 int count=0;
+		 for(int k=0;k<=arr.length-1;k++)
+		 {
+			 if(arr[i]==arr[k])
+			 {
+				 count++;
+			 }
+		 }
+		
+		
+		 System.out.println(arr[i] + "occurs"+count+"times");
+		 
+	}
+		
+
+}
+}
+
+Expected Output
+
+4 occurs 2 times 2 occurs 3 times 6 occurs 1 time 7 occurs 1 time
