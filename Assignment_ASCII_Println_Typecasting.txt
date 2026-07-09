@@ -1,0 +1,89 @@
+Assignment 1: ASCII Code Program
+
+Question: Write a Java program to print the ASCII value of the following characters:
+
+· A
+
+· a
+
+· 0
+
+· @
+
+package day1;
+
+public class Program_ASCIIProgram {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		char ch='A';
+		char ch1='a';
+		char ch2='0';
+		char ch3='@';
+		
+		System.out.println("ASCII value of A = "+(int)(ch));
+		System.out.println("ASCII value of a = "+(int)(ch1));
+		System.out.println("ASCII value of a = "+(int)(ch2));
+		System.out.println("ASCII value of @ = "+(int)(ch3));
+		
+	}
+
+}
+
+Expected Output:
+
+ASCII value of A = 65 ASCII value of a = 97 ASCII value of 0 = 48 ASCII value of @ = 64
+
+Assignment 2: Print Triangle using println()
+
+Question: Write a Java program to print the following triangle pattern using only System.out.println() statements.
+
+Expected Output:
+
+* 
+** 
+*** 
+**** 
+*****
+
+Hint: Use 5 separate println statements.
+
+package day1;
+
+public class Program_Triangle_Println {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("*");
+		System.out.println("**");
+		System.out.println("***");
+		System.out.println("****");
+		System.out.println("*****");
+	}
+
+}
+
+
+Assignment 3: Type Casting
+
+Question: Create a Java program that:
+
+1. Stores 10.75 in a double variable.
+
+2. Explicitly typecasts it to an int variable.
+
+3. Prints both values.
+
+package day1;
+
+public class Program_TypeCastingDoubletoint {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double D1=10.75;
+		int D2=(int)D1;
+		System.out.println("double value is: "+D1+"\nint value is "+D2);
+
+	}
+
+}
