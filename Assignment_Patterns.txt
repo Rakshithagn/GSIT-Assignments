@@ -1,0 +1,139 @@
+Diamond Pattern (5 Rows)
+    *
+   ***
+  *****
+ *******
+*********
+ *******
+  *****
+   ***
+    *
+
+package day6;
+
+public class Program4_DiamondPattern {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n=5;
+		for(int i=1;i<=n;i++) //i=row
+		{
+			for(int sp=1;sp<=n-i;sp++) //sp=space
+			{
+				System.out.print(" ");
+			}
+			for(int star=1;star<=2*i-1;star++)
+			{
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		for(int i=n-1;i>=1;i--) //i=row
+		{
+			for(int sp=1;sp<=n-i;sp++) //sp=space
+			{
+				System.out.print(" ");
+			}
+			for(int star=1;star<=2*i-1;star++)
+			{
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+
+	}
+
+}
+
+2. Butterfly Pattern (5 Rows)
+*        *
+**      **
+***    ***
+****  ****
+**********
+****  ****
+***    ***
+**      **
+*        *
+
+package day6;
+
+public class Program5_Butterflypattern {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n=5;
+		for(int i=1;i<=n;i++)
+		{
+			for(int j=1;j<=i;j++)
+			{
+				System.out.print("*");
+			}
+			for(int k=1;k<=2*(n-i);k++)
+			{
+				System.out.print(" ");
+			}
+			for(int j=1;j<=i;j++)
+			{
+				System.out.print("*");
+			}
+			
+			System.out.println();
+		}
+		for(int i=n-1;i>=1;i--)
+		{
+			for(int j=1;j<=i;j++)
+			{
+				System.out.print("*");
+			}
+			for(int k=1;k<=2*(n-i);k++)
+			{
+				System.out.print(" ");
+			}
+			for(int j=1;j<=i;j++)
+			{
+				System.out.print("*");
+			}
+			
+			System.out.println();
+		}
+		
+	}
+
+}
+
+3. Number Palindrome Pattern (5 Rows)
+        1
+      1 2 1
+    1 2 3 2 1
+  1 2 3 4 3 2 1
+1 2 3 4 5 4 3 2 1
+
+package day6;
+
+public class Program6_NumberPalindromepattern {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n=5;
+		for(int i=1;i<=n;i++) //i=row
+		{
+			for(int sp=1;sp<=n-i;sp++) //sp=space
+			{
+				System.out.print(" ");
+			}
+			for(int num=1;num<=i;num++)//increasing num
+			{
+				System.out.print(num);
+			}
+			for(int num=i-1;num>=1;num--)//decreasing num
+			{
+				System.out.print(num);
+			}
+
+			System.out.println();
+		}
+
+	}
+
+}
