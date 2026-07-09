@@ -1,0 +1,27 @@
+Question
+
+Write a Java program to store the following details using appropriate data types and display them:
+
+Student ID = 101
+Grade = A
+Passed = true
+Age = 18
+
+Print all values on the console.
+
+
+package day1;
+
+public class Program_Datatype {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int Student_ID = 101;
+			char Grade = 'A';
+				boolean Passed = true;
+				int Age = 18;
+				System.out.println("Student ID : "+Student_ID+"\nGrade : "+Grade+"\nPassed : "+Passed+"\nAge : "+Age);
+
+	}
+
+}
